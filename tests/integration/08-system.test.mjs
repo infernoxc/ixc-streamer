@@ -52,7 +52,7 @@ test('diagnostics export: logs + system info, but no keys, tokens, IP addresses 
 test('updates: checks GitHub, verifies the download checksum before installing; a damaged download changes nothing', async () => {
   const setup = Buffer.from('fake installer bytes ' + Date.now()); const good = crypto.createHash('sha256').update(setup).digest('hex'); let sum = good;
   const gh = await httpServer((req, res) => {
-    if (req.url === '/repos/infernoxc/ixc-chatbox/releases/latest') { json(res, 200, { tag_name: 'v9.9.9', body: 'New things', assets: [{ name: 'IXC-Setup-v9.9.9.exe', browser_download_url: gh.url + '/dl/IXC-Setup-v9.9.9.exe' }, { name: 'SHA256SUMS.txt', browser_download_url: gh.url + '/dl/SHA256SUMS.txt' }] }); return; }
+    if (req.url === '/repos/infernoxc/ixc-streamer/releases/latest') { json(res, 200, { tag_name: 'v9.9.9', body: 'New things', assets: [{ name: 'IXC-Setup-v9.9.9.exe', browser_download_url: gh.url + '/dl/IXC-Setup-v9.9.9.exe' }, { name: 'SHA256SUMS.txt', browser_download_url: gh.url + '/dl/SHA256SUMS.txt' }] }); return; }
     if (req.url === '/dl/IXC-Setup-v9.9.9.exe') { res.writeHead(200); res.end(setup); return; }
     if (req.url === '/dl/SHA256SUMS.txt') { res.writeHead(200); res.end(sum + '  IXC-Setup-v9.9.9.exe\n'); return; }
     res.writeHead(404); res.end(); }); cleanup.push(gh.close);
@@ -78,7 +78,7 @@ test('restart and quit from the dashboard give the supervisor the right exit cod
 test('updates install by themselves, but not while you are live; one try per version', async () => {
   const setup = Buffer.from('auto installer ' + Date.now()); const sum = crypto.createHash('sha256').update(setup).digest('hex'); let downloads = 0;
   const gh = await httpServer((req, res) => {
-    if (req.url === '/repos/infernoxc/ixc-chatbox/releases/latest') { json(res, 200, { tag_name: 'v9.9.8', body: 'Auto', assets: [{ name: 'IXC-Setup-v9.9.8.exe', browser_download_url: gh.url + '/dl/IXC-Setup-v9.9.8.exe' }, { name: 'SHA256SUMS.txt', browser_download_url: gh.url + '/dl/SHA256SUMS.txt' }] }); return; }
+    if (req.url === '/repos/infernoxc/ixc-streamer/releases/latest') { json(res, 200, { tag_name: 'v9.9.8', body: 'Auto', assets: [{ name: 'IXC-Setup-v9.9.8.exe', browser_download_url: gh.url + '/dl/IXC-Setup-v9.9.8.exe' }, { name: 'SHA256SUMS.txt', browser_download_url: gh.url + '/dl/SHA256SUMS.txt' }] }); return; }
     if (req.url === '/dl/IXC-Setup-v9.9.8.exe') { downloads++; res.writeHead(200); res.end(setup); return; }
     if (req.url === '/dl/SHA256SUMS.txt') { res.writeHead(200); res.end(sum + '  IXC-Setup-v9.9.8.exe\n'); return; }
     res.writeHead(404); res.end(); }); cleanup.push(gh.close);
@@ -99,7 +99,7 @@ test('updates install by themselves, but not while you are live; one try per ver
 test('updates never install while OBS is streaming or recording', async () => {
   const setup = Buffer.from('obs installer ' + Date.now()); const sum = crypto.createHash('sha256').update(setup).digest('hex'); let downloads = 0;
   const gh = await httpServer((req, res) => {
-    if (req.url === '/repos/infernoxc/ixc-chatbox/releases/latest') { json(res, 200, { tag_name: 'v9.9.7', body: '', assets: [{ name: 'IXC-Setup-v9.9.7.exe', browser_download_url: gh.url + '/dl/IXC-Setup-v9.9.7.exe' }, { name: 'SHA256SUMS.txt', browser_download_url: gh.url + '/dl/SHA256SUMS.txt' }] }); return; }
+    if (req.url === '/repos/infernoxc/ixc-streamer/releases/latest') { json(res, 200, { tag_name: 'v9.9.7', body: '', assets: [{ name: 'IXC-Setup-v9.9.7.exe', browser_download_url: gh.url + '/dl/IXC-Setup-v9.9.7.exe' }, { name: 'SHA256SUMS.txt', browser_download_url: gh.url + '/dl/SHA256SUMS.txt' }] }); return; }
     if (req.url === '/dl/IXC-Setup-v9.9.7.exe') { downloads++; res.writeHead(200); res.end(setup); return; }
     if (req.url === '/dl/SHA256SUMS.txt') { res.writeHead(200); res.end(sum + '  IXC-Setup-v9.9.7.exe\n'); return; }
     res.writeHead(404); res.end(); }); cleanup.push(gh.close);

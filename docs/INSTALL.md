@@ -3,7 +3,7 @@
 ## The normal way
 
 1. Install **OBS Studio** if you don't have it yet ([obsproject.com](https://obsproject.com)), and **open it once**.
-2. Open [Releases](https://github.com/infernoxc/ixc-chatbox/releases/latest), scroll to **Assets** and click **`IXC-Setup-vX.Y.Z.exe`** (for example `IXC-Setup-v3.2.0.exe`). Run it from your Downloads folder.
+2. Open [Releases](https://github.com/infernoxc/ixc-streamer/releases/latest), scroll to **Assets** and click **`IXC-Setup-vX.Y.Z.exe`** (for example `IXC-Setup-v3.2.0.exe`). Run it from your Downloads folder.
    - **"Windows protected your PC"**: click **More info**, then **Run anyway**. This appears because IXC is a free project without a paid code-signing certificate. The download's checksum is listed in `SHA256SUMS.txt` next to it.
 3. Choose **Express (recommended)**.
    - If OBS is open, the setup asks you to close it (**File > Exit**). OBS saves its settings when it closes, so IXC can only add its panels while it's closed.
@@ -40,8 +40,8 @@ Unzip `IXC-Suite-vX.Y.Z.zip` and double-click **`Install.bat`**. It does the sam
 
 ## From source
 ```powershell
-git clone https://github.com/infernoxc/ixc-chatbox.git
-cd ixc-chatbox
+git clone https://github.com/infernoxc/ixc-streamer.git
+cd ixc-streamer
 powershell -ExecutionPolicy Bypass -File scripts\install.ps1
 ```
 This builds IXC with the C# compiler that ships with Windows. Nothing is downloaded.

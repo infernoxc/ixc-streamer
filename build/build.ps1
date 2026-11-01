@@ -21,7 +21,7 @@ Get-ChildItem $stage -Recurse -File -Include 'config.json', '*.log', '*.exe', '*
 # the program itself, compiled once here
 & powershell -NoProfile -ExecutionPolicy Bypass -File "$stage\src\core\build-core.ps1" -Out "$stage\src\core\ixc-core.exe"
 if ($LASTEXITCODE -or -not (Test-Path "$stage\src\core\ixc-core.exe")) { throw 'ixc-core.exe did not build' }
-$defaults = [ordered]@{ relayUrl = "$env:IXC_RELAY_URL"; twitchClientId = "$env:IXC_TWITCH_CLIENT_ID"; googleClientId = "$env:IXC_GOOGLE_CLIENT_ID"; kickClientId = "$env:IXC_KICK_CLIENT_ID"; updateRepo = $(if ($env:IXC_UPDATE_REPO) { $env:IXC_UPDATE_REPO } else { 'infernoxc/ixc-chatbox' }) }
+$defaults = [ordered]@{ relayUrl = "$env:IXC_RELAY_URL"; twitchClientId = "$env:IXC_TWITCH_CLIENT_ID"; googleClientId = "$env:IXC_GOOGLE_CLIENT_ID"; kickClientId = "$env:IXC_KICK_CLIENT_ID"; updateRepo = $(if ($env:IXC_UPDATE_REPO) { $env:IXC_UPDATE_REPO } else { 'infernoxc/ixc-streamer' }) }
 [IO.File]::WriteAllText("$stage\src\core\ixc.defaults.json", ($defaults | ConvertTo-Json), (New-Object Text.UTF8Encoding $false))
 Write-Host ("build settings: relay " + $(if ($defaults.relayUrl) { 'set' } else { 'NOT SET (phone remote unavailable)' }) + ", Twitch sign-in " + $(if ($defaults.twitchClientId) { 'set' } else { 'NOT SET' }) + ", YouTube sign-in " + $(if ($defaults.googleClientId) { 'set' } else { 'NOT SET' }) + ", Kick sign-in " + $(if ($defaults.kickClientId) { 'set' } else { 'NOT SET' }))
 

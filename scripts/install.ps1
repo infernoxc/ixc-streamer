@@ -1,4 +1,4 @@
-# IXC Suite installer (IXC Music + IXC ChatBox). Per user - NO admin rights needed. Used by IXC-Setup.exe and Install.bat.
+# IXC Streamer installer (IXC Music + IXC ChatBox). Per user - NO admin rights needed. Used by IXC-Setup.exe and Install.bat.
 #   detect system -> stop old IXC -> back up your settings -> install the new version next to the old one -> switch over ->
 #   start IXC -> turn on OBS's WebSocket + add IXC's panels (when OBS is closed) -> health check -> roll back if IXC won't start.
 # Copyright (c) 2026 Ishan (InFerNoxC) - MIT License

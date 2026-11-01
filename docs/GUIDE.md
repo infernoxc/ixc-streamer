@@ -33,7 +33,7 @@ You don't need Streamer.bot.
 You don't need administrator rights, port forwarding or firewall changes.
 
 ## 2. Install
-1. Go to **[Releases](https://github.com/infernoxc/ixc-chatbox/releases/latest)** and download **`IXC-Setup-vX.Y.Z.exe`**.
+1. Go to **[Releases](https://github.com/infernoxc/ixc-streamer/releases/latest)** and download **`IXC-Setup-vX.Y.Z.exe`**.
 2. **Close OBS** (File > Exit). IXC can only add its panels to OBS while OBS is closed. If OBS is open, the setup asks you to close it.
 3. Run `IXC-Setup-vX.Y.Z.exe`.
    - If Windows says **"Windows protected your PC"**, click **More info**, then **Run anyway**. IXC is free and has no paid code-signing
@@ -47,8 +47,8 @@ You don't need administrator rights, port forwarding or firewall changes.
 - **ZIP:** download `IXC-Suite-vX.Y.Z.zip`, unzip it, close OBS, double-click **`Install.bat`**.
 - **From source:**
   ```powershell
-  git clone https://github.com/infernoxc/ixc-chatbox.git
-  cd ixc-chatbox
+  git clone https://github.com/infernoxc/ixc-streamer.git
+  cd ixc-streamer
   powershell -ExecutionPolicy Bypass -File scripts\install.ps1
   ```
   IXC is built with the C# compiler that ships with Windows; nothing else is downloaded.
@@ -297,4 +297,4 @@ settings: [UNINSTALL.md](UNINSTALL.md).
 2. Still wrong? Tray > **Restart IXC**.
 3. Still wrong? See [TROUBLESHOOTING.md](TROUBLESHOOTING.md).
 4. Ask for help with **System check > Export diagnostics** attached:
-   [open an issue](https://github.com/infernoxc/ixc-chatbox/issues/new).
+   [open an issue](https://github.com/infernoxc/ixc-streamer/issues/new).

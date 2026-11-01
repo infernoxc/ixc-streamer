@@ -1,4 +1,4 @@
-; IXC Suite installer (IXC Music + IXC ChatBox) - Inno Setup 6. Built by build\build.ps1 -Installer.
+; IXC Streamer installer (IXC Music + IXC ChatBox) - Inno Setup 6. Built by build\build.ps1 -Installer.
 ; Per user, no admin rights. Express setup by default; "Advanced" shows the options. The real work is done by
 ; scripts\install.ps1 (the same script Install.bat uses), so both ways install exactly the same thing.
 ; Copyright (c) 2026 Ishan (InFerNoxC) - MIT License
@@ -14,10 +14,10 @@
 AppId={{8D1F4C22-9E3A-4B7D-B5C6-2A8E0F9D3B02}
 AppName=IXC
 AppVersion={#AppVersion}
-AppVerName=IXC {#AppVersion}
+AppVerName=IXC Streamer {#AppVersion}
 AppPublisher=Ishan (InFerNoxC)
-AppPublisherURL=https://github.com/infernoxc/ixc-chatbox
-AppSupportURL=https://github.com/infernoxc/ixc-chatbox/issues
+AppPublisherURL=https://github.com/infernoxc/ixc-streamer
+AppSupportURL=https://github.com/infernoxc/ixc-streamer/issues
 DefaultDirName={localappdata}\IXC-OBS\setup
 DisableDirPage=yes
 DisableProgramGroupPage=yes
@@ -25,7 +25,7 @@ PrivilegesRequired=lowest
 OutputBaseFilename=IXC-Setup-v{#AppVersion}
 SetupIconFile={#SourceDir}\src\core\ixc.ico
 UninstallDisplayIcon={localappdata}\IXC-OBS\app\core\ixc-core.exe
-UninstallDisplayName=IXC (Music + ChatBox for OBS)
+UninstallDisplayName=IXC Streamer (Music + ChatBox for OBS)
 Compression=lzma2/max
 SolidCompression=yes
 WizardStyle=modern
