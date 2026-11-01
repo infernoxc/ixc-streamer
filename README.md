@@ -1,17 +1,17 @@
 <div align="center">
 
-<img src="docs/images/banner.png" alt="IXC - music, chat and chat voice for OBS" width="100%">
+<img src="docs/images/banner.png" alt="IXC Streamer - music, chat and chat voice for OBS" width="100%">
 
-[![Download](https://img.shields.io/github/v/release/infernoxc/ixc-chatbox?label=download&color=e3141e)](https://github.com/infernoxc/ixc-chatbox/releases/latest)
-[![CI](https://github.com/infernoxc/ixc-chatbox/actions/workflows/ci.yml/badge.svg)](https://github.com/infernoxc/ixc-chatbox/actions/workflows/ci.yml)
+[![Download](https://img.shields.io/github/v/release/infernoxc/ixc-streamer?label=download&color=e3141e)](https://github.com/infernoxc/ixc-streamer/releases/latest)
+[![CI](https://github.com/infernoxc/ixc-streamer/actions/workflows/ci.yml/badge.svg)](https://github.com/infernoxc/ixc-streamer/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-e3141e.svg)](LICENSE)
 ![Windows 10/11](https://img.shields.io/badge/Windows-10%20%7C%2011-0078D4)
 ![OBS Studio](https://img.shields.io/badge/OBS%20Studio-30%2B-302E31)
 
-**IXC Suite = IXC Music + IXC ChatBox.** Twitch, Kick, YouTube and Rumble chat in one place, a chat voice (TTS), a music player
+**IXC Streamer = IXC Music + IXC ChatBox in one program.** Twitch, Kick, YouTube and Rumble chat in one place, a chat voice (TTS), a music player
 with song requests, overlays, and a phone remote that works on mobile data. Made for OBS. **No Streamer.bot needed.**
 
-[**⬇ Download IXC-Setup.exe**](https://github.com/infernoxc/ixc-chatbox/releases/latest) · [**📖 Step-by-step guide**](docs/GUIDE.md) · [Install](docs/INSTALL.md) · [How to use](docs/USAGE.md) · [Something wrong?](docs/TROUBLESHOOTING.md)
+[**⬇ Download IXC-Setup.exe**](https://github.com/infernoxc/ixc-streamer/releases/latest) · [**📖 Step-by-step guide**](docs/GUIDE.md) · [Install](docs/INSTALL.md) · [How to use](docs/USAGE.md) · [Something wrong?](docs/TROUBLESHOOTING.md)
 
 </div>
 
@@ -22,7 +22,7 @@ with song requests, overlays, and a phone remote that works on mobile data. Made
 ## Get started (5 minutes)
 
 1. **Install OBS Studio** (free, [obsproject.com](https://obsproject.com)) if you don't have it, and open it once.
-2. **Download IXC:** open [Releases](https://github.com/infernoxc/ixc-chatbox/releases/latest), scroll down to **Assets** and click
+2. **Download IXC:** open [Releases](https://github.com/infernoxc/ixc-streamer/releases/latest), scroll down to **Assets** and click
    **`IXC-Setup-v3.2.0.exe`** (the number is the version).
 3. **Run it** from your Downloads folder.
    - If Windows says **"Windows protected your PC"**: click **More info**, then **Run anyway**. (IXC is free and has no paid

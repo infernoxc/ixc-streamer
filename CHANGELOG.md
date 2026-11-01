@@ -3,6 +3,12 @@ All notable changes are listed here ([Keep a Changelog](https://keepachangelog.c
 
 ## [Unreleased]
 
+## [3.3.3] - 2026-11-01
+### Changed
+- New name: **IXC Streamer** (IXC Music + IXC ChatBox in one program). The dashboard, the installer and Windows "Installed apps" show the new name.
+- The repository is now [infernoxc/ixc-streamer](https://github.com/infernoxc/ixc-streamer), and update checks use it. Old ixc-chatbox and ixc-music links redirect.
+- Nothing else changes: same install folder, settings, OBS panels and OBS source names, so updating keeps everything.
+
 ## [3.3.2] - 2026-10-30
 ### Added
 - Channel point rewards for Twitch and Kick (new page Rewards & sounds): song request, any chat command, sound effect, read the message aloud, chat message; title, cost, description, viewer text, cooldown, colour and platforms per reward; 9 ready-made rewards. IXC creates and updates them on Twitch (new Twitch permission `channel:manage:redemptions`, connect Twitch again once) and, when switched on, on Kick. Claims from Twitch EventSub, Kick's chat socket, Streamer.bot (`RewardRedemption`) or `POST /api/rewards/redeem`; duplicates count once. A failed song request gives the Twitch points back. Test 34.

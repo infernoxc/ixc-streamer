@@ -1,7 +1,7 @@
 # Security policy
 
 Only the latest release gets fixes. Please report vulnerabilities **privately** through
-[GitHub private vulnerability reporting](https://github.com/infernoxc/ixc-chatbox/security/advisories/new), not in public issues.
+[GitHub private vulnerability reporting](https://github.com/infernoxc/ixc-streamer/security/advisories/new), not in public issues.
 You'll get a reply within 7 days.
 
 ## Security model (IXC 3)

@@ -164,7 +164,7 @@ namespace IXC {
   // ---------- updates: check -> backup -> download -> verify -> install (installer keeps the old version for rollback) ----------
   public static class Updates {
     static string latest = "", notes = "", setupUrl = "", sumsUrl = "", checkedAt = "", error = ""; static volatile bool busy; static string progress = ""; static Timer t;
-    static string Repo { get { var r = Program.Default("updateRepo"); return r.Length > 0 ? r : "infernoxc/ixc-chatbox"; } }
+    static string Repo { get { var r = Program.Default("updateRepo"); return r.Length > 0 ? r : "infernoxc/ixc-streamer"; } }
     static DateTime lastCheck = DateTime.MinValue; static string autoNote = "", autoFailed = "";
     // checks soon after IXC starts and then every 6 hours; an update found is installed by itself (general.autoUpdate) as soon as
     // it's safe: not while OBS streams or records, and not while a platform shows you live (IXC restarts during an update)

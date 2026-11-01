@@ -6,7 +6,7 @@ Thanks for helping! Bug reports, ideas and pull requests are welcome.
 
 ## Development
 ```powershell
-git clone https://github.com/infernoxc/ixc-chatbox.git; cd ixc-chatbox
+git clone https://github.com/infernoxc/ixc-streamer.git; cd ixc-streamer
 powershell -ExecutionPolicy Bypass -File src\core\build-core.ps1    # builds src\core\ixc-core.exe (C# compiler built into Windows)
 powershell -ExecutionPolicy Bypass -File tests\smoke.ps1 -Install   # Windows tests: build, run, install/update/uninstall
 ```
